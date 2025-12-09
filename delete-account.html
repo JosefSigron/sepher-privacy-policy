@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Sepher Account</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #D00000;
+            border-bottom: 2px solid #D00000;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #6A040F;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #D00000;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 24px;
+            background-color: #D00000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delete Your Sepher Account</h1>
+    <p class="last-updated">Last updated: <span id="date"></span></p>
+
+    <p>You can request deletion of your Sepher account and all associated cloud data at any time. Once we verify the request, we permanently remove your account credentials, profile information, and any book/page content stored in Firebase.</p>
+
+    <h2>How to submit a deletion request</h2>
+    <ol>
+        <li>Open the Sepher app, go to <strong>Settings &gt; Request data deletion</strong>, and follow the instructions.</li>
+        <li>Or email us directly at <a href="mailto:support@sepher.app?subject=Sepher%20data%20deletion%20request">support@sepher.app</a> from the Google account you used to sign in.</li>
+    </ol>
+    <p>When emailing us, please include:</p>
+    <ul>
+        <li>The Google account email associated with Sepher</li>
+        <li>Your Firebase UID (shown in the Profile screen)</li>
+        <li>Confirmation that you want all Sepher data deleted</li>
+    </ul>
+    <a class="cta" href="mailto:support@sepher.app?subject=Sepher%20data%20deletion%20request">Email Sepher Support</a>
+
+    <h2>What happens after you submit a request?</h2>
+    <ul>
+        <li>We acknowledge your request within 3 business days.</li>
+        <li>All account data stored in Firebase Authentication, Firestore, and Cloud Storage is deleted within 30 days (usually much sooner).</li>
+        <li>You will receive a confirmation email once deletion is complete.</li>
+    </ul>
+
+    <h2>Local data on your device</h2>
+    <p>Sepher may store temporary files (captured pages, generated audio) locally on your device. Account deletion removes the cloud backups, but you can manually delete local files by uninstalling the app and removing the <code>Sepher</code> directory from your device storage.</p>
+
+    <h2>Need help?</h2>
+    <p>If you have questions about the process, contact us at <a href="mailto:support@sepher.app">support@sepher.app</a>.</p>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+</body>
+</html>
+
